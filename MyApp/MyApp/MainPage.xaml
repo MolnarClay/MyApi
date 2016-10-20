@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MyApp"
+             x:Class="MyApp.MainPage">
+
+	<Label Text="Welcome to Xamarin Forms!" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />
+
+
+
+  <StackLayout>
+    <Label Text="Please login." />
+    <Entry x:Name="tbxUsername" Placeholder="email address" HorizontalOptions="FillAndExpand" />
+    <Entry x:Name="tbxPassword" Placeholder="password" IsPassword="true"  HorizontalOptions="FillAndExpand" />
+    <Button x:Name="btnSubmit" Text="Login" Clicked="BtnSubmit_OnClicked" HorizontalOptions="StartAndExpand" ></Button>
+    <ActivityIndicator x:Name="pleaseWait"></ActivityIndicator>
+  </StackLayout>
+
+</ContentPage>

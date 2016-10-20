@@ -7,22 +7,13 @@ using Xamarin.Forms;
 
 namespace MyApp
 {
-	public class App : Application
+	public partial class App : Application
 	{
 		public App ()
 		{
-			// The root page of your application
-			MainPage = new ContentPage {
-				Content = new StackLayout {
-					VerticalOptions = LayoutOptions.Center,
-					Children = {
-						new Label {
-							HorizontalTextAlignment = TextAlignment.Center,
-							Text = "Welcome to Xamarin Forms!"
-						}
-					}
-				}
-			};
+			InitializeComponent();
+
+			MainPage = new MyApp.MainPage();
 		}
 
 		protected override void OnStart ()

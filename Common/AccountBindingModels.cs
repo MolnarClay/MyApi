@@ -1,9 +1,8 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using Newtonsoft.Json;
 
-namespace MyApi.Models
-{
+
+
     // Models used as parameters to AccountController actions.
 
     public class AddExternalLoginBindingModel
@@ -81,4 +80,4 @@ namespace MyApi.Models
         [Compare("NewPassword", ErrorMessage = "The new password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
     }
-}
+
